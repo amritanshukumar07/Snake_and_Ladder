@@ -5,5 +5,12 @@ public class Main {
         System.out.println("Welcome to snake and ladder game");
         System.out.println("Player 1 start at 0");
 
+        int dice= (int) (Math.random()*6)+1;
+
+        System.out.println("Value of dice is "+ dice);
+
+
+
+
     }
 }
