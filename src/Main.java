@@ -5,7 +5,8 @@ public class Main {
         System.out.println("Welcome to snake and ladder game");
         System.out.println("Player 1 start at 0");
         int player1Pos=0;
--        while(player1Pos<100) {
+        int it=0;
+        while(player1Pos!=100) {
             int dice = (int) (Math.random() * 6) + 1;
 
             System.out.println("Value of dice is " + dice);
@@ -20,9 +21,13 @@ public class Main {
             if (player1Pos < 0) {
                 player1Pos = 0;
             }
+            if(player1Pos>100){
+                player1Pos-=dice;
+            }
             System.out.println("Player position is " + player1Pos);
              it++;
         }
+        System.out.println("Number of times dice is rolled "+ it);
 
     }
 }
