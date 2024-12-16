@@ -2,7 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("Welcome to snake and ladder game");
+        System.out.println("Player 1 start at 0");
 
     }
 }
